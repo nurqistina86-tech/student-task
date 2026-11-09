@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    color: #333;
+}
+
+header {
+    background: #5546d8;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+main {
+    max-width: 700px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #5546d8;
+}
+
+input {
+    width: 75%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+button {
+    padding: 12px 18px;
+    background: #5546d8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4032b5;
+}
+
+ul {
+    list-style: none;
+    margin-top: 25px;
+}
+
+li {
+    background: #f4f3ff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    background: #f4f3ff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.stat-card h3 {
+    color: #5546d8;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .stats-container {
+        grid-template-columns: 1fr;
+    }
+}
